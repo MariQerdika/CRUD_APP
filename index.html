@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="info">
+        <form onsubmit="event.preventDefault();  onFormSubmit();" autocomplete="off" >
+            <div>
+                <label>First Name*</label><label class="validation-error hide" id="FirstNameValidationError">This field is requared.</label>
+                <input type="text" name="FirstName" id="FirstName">
+            </div>
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="lastName" id="lastName">
+            </div>
+            <div>
+                <label>Date</label>
+                <input type="date" name="Date" id="Date">
+            </div>
+            <div id="create">
+                <div class="add_f" onClick="createDiv()"><i class="fas fa-plus"></i>Edd</div>
+                </div>
+            <div id="myDiv" class="addblock">
+            <div class="cars_field" id="getText">
+            <div>
+                <label>Cars</label>
+                <input type="text" name="Cars" id="Cars">   
+            </div>
+                <div class="add_input"  >   
+                    <div>
+                        <label>Mark</label>
+                        <input type="text" name="mark" id="mark">
+                    </div>
+                    <div>
+                        <label>Model</label>
+                        <input type="text" name="model" id="model">
+                    </div>
+                    <div>
+                        <label>Realase Date</label>
+                        <input type="date" name="year" id="year">
+                    </div>  
+                </div>
+            </div>
+        </div>   
+            <div class="form-action-buttons">
+                <input type="submit" value="Save">
+            </div>
+        </form>
+    </div>
+    <table class="list" id="carList">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Date</th>
+            <th>Cars</th>
+            <th>Mark</th>
+            <th>Model</th>
+            <th>Realase Date</th>
+            <th>Edit/Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+                        
+    </tbody>
+    </table>
+<script src="main.js"></script>
+</body>
+</html>
